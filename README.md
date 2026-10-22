@@ -10,13 +10,18 @@ Native iOS football manager sim (Swift + SwiftUI). Turkish UI labels: **Merkez**
 
 ## Open in Xcode
 
-1. Clone this repo.
+1. Clone this repo (branch `cursor/phase-0-scaffold-a20b` until merged).
 2. Open `MatchdayManager26.xcodeproj` in Xcode (double-click or File → Open).
-3. Select an iPhone simulator (e.g. iPhone 15).
+3. Select an iPhone simulator (e.g. iPhone 15) or your device.
 4. Press Run (⌘R).
 
 If signing fails on a physical device, set your **Team** under the MatchdayManager26 target → Signing & Capabilities.
 
-## Phase 0 status
+## Current status (Phase 1)
 
-Scaffold only: five-tab shell with placeholder screens. Gameplay, match sim, and App Store / TestFlight upload come later (needs an Apple Developer account on a Mac).
+- **Merkez**: playable club (Boğaz Spor), next opponent, recent form (G/B/M), transfer budget, **Maça Çık** visible but disabled (Phase 3).
+- **Lig**: Anadolu Ligi table with W / D / L / GD / Pts (seed data).
+- Synthetic seed only — not a licensed / live football database.
+- **Kadro**, **Taktik**, **Transfer** still placeholders (Phase 2–3).
+
+App Store / TestFlight upload comes later (Apple Developer account on a Mac).
