@@ -19,9 +19,9 @@ If signing fails on a physical device, set your **Team** under the MatchdayManag
 
 ## Current status (Phase 1)
 
-- **Merkez**: playable club (Boğaz Spor), next opponent, recent form (G/B/M), transfer budget, **Maça Çık** visible but disabled (Phase 3).
-- **Lig**: Anadolu Ligi table with W / D / L / GD / Pts (seed data).
-- Synthetic seed only — not a licensed / live football database.
+- **Merkez**: playable club (**Pogaz SK**), next opponent, recent form (G/B/M), transfer budget, **Maça Çık** visible but disabled (Phase 3).
+- **Lig**: **Endolu Ligi** table with W / D / L / GD / Pts (seed data).
+- Synthetic seed only — fictional club/player names; not a licensed / live football database.
 - **Kadro**, **Taktik**, **Transfer** still placeholders (Phase 2–3).
 
 App Store / TestFlight upload comes later (Apple Developer account on a Mac).
