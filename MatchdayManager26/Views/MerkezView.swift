@@ -6,17 +6,23 @@ struct MerkezView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 16) {
                     clubHeader
                     nextOpponentCard
                     formSection
                     budgetSection
-                    macaCikButton
                 }
-                .padding()
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
+                .padding(.bottom, 24)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
             .background(Color(.systemGroupedBackground))
             .navigationTitle("Merkez")
+            .navigationBarTitleDisplayMode(.large)
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                macaCikBar
+            }
         }
     }
 
@@ -29,6 +35,7 @@ struct MerkezView: View {
                 .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .combine)
     }
 
     private var nextOpponentCard: some View {
@@ -39,23 +46,19 @@ struct MerkezView: View {
                 .textCase(.uppercase)
 
             HStack(spacing: 12) {
-                Text(store.state.playableClub?.shortName ?? "—")
-                    .font(.headline)
-                    .frame(width: 48, height: 48)
-                    .background(Color(.secondarySystemFill), in: Circle())
+                clubBadge(store.state.playableClub?.shortName ?? "—")
 
                 Text("vs")
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(.secondary)
 
-                Text(store.state.nextOpponent?.shortName ?? "—")
-                    .font(.headline)
-                    .frame(width: 48, height: 48)
-                    .background(Color(.secondarySystemFill), in: Circle())
+                clubBadge(store.state.nextOpponent?.shortName ?? "—")
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(store.state.nextOpponent?.name ?? "Rakip yok")
                         .font(.headline)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.85)
                     Text("Deplasman")
                         .font(.caption)
                         .foregroundStyle(.secondary)
@@ -64,9 +67,13 @@ struct MerkezView: View {
                 Spacer(minLength: 0)
             }
         }
-        .padding()
+        .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 12))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(
+            "Sıradaki maç, \(store.state.nextOpponent?.name ?? "rakip yok"), deplasman"
+        )
     }
 
     private var formSection: some View {
@@ -88,7 +95,7 @@ struct MerkezView: View {
                 Spacer(minLength: 0)
             }
         }
-        .padding()
+        .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 12))
     }
@@ -103,13 +110,17 @@ struct MerkezView: View {
             Text(store.transferBudgetText)
                 .font(.title.bold())
                 .monospacedDigit()
+                .minimumScaleFactor(0.8)
+                .lineLimit(1)
         }
-        .padding()
+        .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 12))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Transfer bütçesi \(store.transferBudgetText)")
     }
 
-    private var macaCikButton: some View {
+    private var macaCikBar: some View {
         Button(action: {}) {
             Text("Maça Çık")
                 .font(.headline)
@@ -118,7 +129,21 @@ struct MerkezView: View {
         }
         .buttonStyle(.borderedProminent)
         .disabled(true)
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
+        .padding(.bottom, 8)
+        .background(.bar)
         .accessibilityHint("Maç simülasyonu Phase 3'te açılacak")
+    }
+
+    private func clubBadge(_ shortName: String) -> some View {
+        Text(shortName)
+            .font(.headline)
+            .minimumScaleFactor(0.7)
+            .lineLimit(1)
+            .frame(width: 48, height: 48)
+            .background(Color(.secondarySystemFill), in: Circle())
+            .accessibilityHidden(true)
     }
 
     private func formColor(_ mark: MatchResultMark) -> Color {

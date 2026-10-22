@@ -3,6 +3,9 @@ import SwiftUI
 struct LigView: View {
     @Environment(GameStore.self) private var store
 
+    private let metricWidth: CGFloat = 28
+    private let gdWidth: CGFloat = 36
+
     var body: some View {
         NavigationStack {
             List {
@@ -17,19 +20,21 @@ struct LigView: View {
             }
             .listStyle(.insetGrouped)
             .navigationTitle("Lig")
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 
     private var headerRow: some View {
         HStack(spacing: 0) {
             Text("#")
-                .frame(width: 28, alignment: .leading)
+                .frame(width: metricWidth, alignment: .leading)
             Text("Kulüp")
-            Spacer()
+            Spacer(minLength: 8)
             metricHeader("G")
             metricHeader("B")
             metricHeader("M")
-            metricHeader("Av")
+            Text("Av")
+                .frame(width: gdWidth, alignment: .trailing)
             metricHeader("P")
         }
         .font(.caption.weight(.semibold))
@@ -47,22 +52,27 @@ struct LigView: View {
             Text("\(rank)")
                 .font(.subheadline.monospacedDigit())
                 .foregroundStyle(.secondary)
-                .frame(width: 28, alignment: .leading)
+                .frame(width: metricWidth, alignment: .leading)
 
             Text(club?.name ?? "—")
                 .font(isPlayable ? .subheadline.bold() : .subheadline)
                 .lineLimit(1)
+                .minimumScaleFactor(0.8)
 
             Spacer(minLength: 8)
 
             metricCell(standing.won)
             metricCell(standing.drawn)
             metricCell(standing.lost)
-            metricCell(standing.goalDifference, signed: true)
+            Text(signed(standing.goalDifference))
+                .font(.subheadline.monospacedDigit())
+                .foregroundStyle(.secondary)
+                .frame(width: gdWidth, alignment: .trailing)
             Text("\(standing.points)")
                 .font(.subheadline.bold().monospacedDigit())
-                .frame(width: 28, alignment: .trailing)
+                .frame(width: metricWidth, alignment: .trailing)
         }
+        .listRowInsets(EdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16))
         .listRowBackground(isPlayable ? Color.accentColor.opacity(0.12) : nil)
         .accessibilityElement(children: .combine)
         .accessibilityLabel(accessibilityLabel(rank: rank, clubName: club?.name ?? "", standing: standing))
@@ -70,14 +80,18 @@ struct LigView: View {
 
     private func metricHeader(_ title: String) -> some View {
         Text(title)
-            .frame(width: 28, alignment: .trailing)
+            .frame(width: metricWidth, alignment: .trailing)
     }
 
-    private func metricCell(_ value: Int, signed: Bool = false) -> some View {
-        Text(signed && value > 0 ? "+\(value)" : "\(value)")
+    private func metricCell(_ value: Int) -> some View {
+        Text("\(value)")
             .font(.subheadline.monospacedDigit())
             .foregroundStyle(.secondary)
-            .frame(width: 28, alignment: .trailing)
+            .frame(width: metricWidth, alignment: .trailing)
+    }
+
+    private func signed(_ value: Int) -> String {
+        value > 0 ? "+\(value)" : "\(value)"
     }
 
     private func accessibilityLabel(rank: Int, clubName: String, standing: Standing) -> String {
