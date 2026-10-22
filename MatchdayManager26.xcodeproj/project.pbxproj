@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+
+		9B056CBE2DEB43BEBA0075DC /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCC5D872CB44DBBB53CAC4C /* Position.swift */; };
+		6FC646A9367D453389EC1209 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8224916EB29406C935E69DB /* Player.swift */; };
+		6FE5DC6331EA4489890B2676 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6DA3702B7F4C189DE4EAA2 /* Club.swift */; };
+		19E42860F1E44FB68E28F80D /* Standing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231A480D64B4BE9AB856E05 /* Standing.swift */; };
+		C013332D9F0841C8A172066E /* MatchResultMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869DDDDE1DE54285B11A93F9 /* MatchResultMark.swift */; };
+		ACE5147172D340F9A567B37B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BD9BA81B64A62A3D1A712 /* GameState.swift */; };
+		3757BA6728704F4DA7F498A2 /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3744C0B13045E3A44BBBC2 /* SeedData.swift */; };
+		74069A60A53F4F48A2FA06FE /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285670C79FF74CE9B132100D /* GameStore.swift */; };
+		006F0DF21D40441E827E6E63 /* KadroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C03C3CB9BD4B46A6466733 /* KadroView.swift */; };
+		0E3907F72B1F44E8AD533EE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21200FBD1D644AC983EA3A0 /* ContentView.swift */; };
+		4D5A68CB522B459283A944F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853CE54557754FCE840C7981 /* Assets.xcassets */; };
+		5709D9D6809841B992392ED8 /* LigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E865124A8494F2295473EC1 /* LigView.swift */; };
+		668A0C496E8247C5971C5693 /* PlaceholderTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F56D7FEE4B3DA426EA40 /* PlaceholderTabScreen.swift */; };
+		797B7CBCB9B143ABA10B6849 /* MatchdayManager26App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99298518E594647BA8BC541 /* MatchdayManager26App.swift */; };
+		CAFAFFCDCE864293B0E4D55D /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBB90803451E8396CCE2 /* TransferView.swift */; };
+		DC5AEE4A4AF74FEEB3C272DA /* TaktikView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E670B1665014E5685DE892A /* TaktikView.swift */; };
+		EBAD931B4CF146F588079AFD /* MerkezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6753CAC7F8C740FB804EAD6A /* MerkezView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+
+		6BCC5D872CB44DBBB53CAC4C /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		E8224916EB29406C935E69DB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5A6DA3702B7F4C189DE4EAA2 /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		C231A480D64B4BE9AB856E05 /* Standing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standing.swift; sourceTree = "<group>"; };
+		869DDDDE1DE54285B11A93F9 /* MatchResultMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultMark.swift; sourceTree = "<group>"; };
+		189BD9BA81B64A62A3D1A712 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		3B3744C0B13045E3A44BBBC2 /* SeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedData.swift; sourceTree = "<group>"; };
+		285670C79FF74CE9B132100D /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		6753CAC7F8C740FB804EAD6A /* MerkezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerkezView.swift; sourceTree = "<group>"; };
+		72C03C3CB9BD4B46A6466733 /* KadroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KadroView.swift; sourceTree = "<group>"; };
+		75F79A96826048DBA4231740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E865124A8494F2295473EC1 /* LigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigView.swift; sourceTree = "<group>"; };
+		853CE54557754FCE840C7981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85654EEF84F24858BC7DC30C /* MatchdayManager26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchdayManager26.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D17CBB90803451E8396CCE2 /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
+		9E670B1665014E5685DE892A /* TaktikView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaktikView.swift; sourceTree = "<group>"; };
+		A21200FBD1D644AC983EA3A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D99298518E594647BA8BC541 /* MatchdayManager26App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchdayManager26App.swift; sourceTree = "<group>"; };
+		DB40F56D7FEE4B3DA426EA40 /* PlaceholderTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTabScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06B95FC5479C406CAC0E8816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+
+		1F28478F1889414D88A7E40B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BCC5D872CB44DBBB53CAC4C /* Position.swift */,
+				E8224916EB29406C935E69DB /* Player.swift */,
+				5A6DA3702B7F4C189DE4EAA2 /* Club.swift */,
+				C231A480D64B4BE9AB856E05 /* Standing.swift */,
+				869DDDDE1DE54285B11A93F9 /* MatchResultMark.swift */,
+				189BD9BA81B64A62A3D1A712 /* GameState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0A250B7A60B47EBB7047F84 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3B3744C0B13045E3A44BBBC2 /* SeedData.swift */,
+				285670C79FF74CE9B132100D /* GameStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		44470160BEE54BE2B2EBB825 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6753CAC7F8C740FB804EAD6A /* MerkezView.swift */,
+				72C03C3CB9BD4B46A6466733 /* KadroView.swift */,
+				9E670B1665014E5685DE892A /* TaktikView.swift */,
+				8D17CBB90803451E8396CCE2 /* TransferView.swift */,
+				7E865124A8494F2295473EC1 /* LigView.swift */,
+				DB40F56D7FEE4B3DA426EA40 /* PlaceholderTabScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67DBBAFF88F94FCF8A8E9AD1 /* MatchdayManager26 */ = {
+			isa = PBXGroup;
+			children = (
+				D99298518E594647BA8BC541 /* MatchdayManager26App.swift */,
+				A21200FBD1D644AC983EA3A0 /* ContentView.swift */,
+				1F28478F1889414D88A7E40B /* Models */,
+				B0A250B7A60B47EBB7047F84 /* Data */,
+				44470160BEE54BE2B2EBB825 /* Views */,
+				853CE54557754FCE840C7981 /* Assets.xcassets */,
+				75F79A96826048DBA4231740 /* Info.plist */,
+			);
+			path = MatchdayManager26;
+			sourceTree = "<group>";
+		};
+		842D5A3FE1E145AFB40FC07E = {
+			isa = PBXGroup;
+			children = (
+				67DBBAFF88F94FCF8A8E9AD1 /* MatchdayManager26 */,
+				AFFDDA249DE7437CB429D92C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFFDDA249DE7437CB429D92C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85654EEF84F24858BC7DC30C /* MatchdayManager26.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD1A8A369145409FBEC7055C /* MatchdayManager26 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1F808A9F0C403E8D7FBBEF /* Build configuration list for PBXNativeTarget "MatchdayManager26" */;
+			buildPhases = (
+				3BCE5C0E00C547D0A66F16E1 /* Sources */,
+				06B95FC5479C406CAC0E8816 /* Frameworks */,
+				40A284E9A046419182E0AD1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MatchdayManager26;
+			productName = MatchdayManager26;
+			productReference = 85654EEF84F24858BC7DC30C /* MatchdayManager26.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8E71AE049BF4DCEA27C4CB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					BD1A8A369145409FBEC7055C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = EAAC5F23739B48F68D4F037E /* Build configuration list for PBXProject "MatchdayManager26" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = tr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				tr,
+			);
+			mainGroup = 842D5A3FE1E145AFB40FC07E;
+			productRefGroup = AFFDDA249DE7437CB429D92C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD1A8A369145409FBEC7055C /* MatchdayManager26 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40A284E9A046419182E0AD1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5A68CB522B459283A944F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BCE5C0E00C547D0A66F16E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B7CBCB9B143ABA10B6849 /* MatchdayManager26App.swift in Sources */,
+				0E3907F72B1F44E8AD533EE4 /* ContentView.swift in Sources */,
+				9B056CBE2DEB43BEBA0075DC /* Position.swift in Sources */,
+				6FC646A9367D453389EC1209 /* Player.swift in Sources */,
+				6FE5DC6331EA4489890B2676 /* Club.swift in Sources */,
+				19E42860F1E44FB68E28F80D /* Standing.swift in Sources */,
+				C013332D9F0841C8A172066E /* MatchResultMark.swift in Sources */,
+				ACE5147172D340F9A567B37B /* GameState.swift in Sources */,
+				3757BA6728704F4DA7F498A2 /* SeedData.swift in Sources */,
+				74069A60A53F4F48A2FA06FE /* GameStore.swift in Sources */,
+				EBAD931B4CF146F588079AFD /* MerkezView.swift in Sources */,
+				006F0DF21D40441E827E6E63 /* KadroView.swift in Sources */,
+				DC5AEE4A4AF74FEEB3C272DA /* TaktikView.swift in Sources */,
+				CAFAFFCDCE864293B0E4D55D /* TransferView.swift in Sources */,
+				5709D9D6809841B992392ED8 /* LigView.swift in Sources */,
+				668A0C496E8247C5971C5693 /* PlaceholderTabScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04F93C9E8F3843E4AAF59FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B41A824CB824371953B3A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MatchdayManager26/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Matchday Manager 26";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matchdaymanager.MatchdayManager26;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EA3C3CC46FEA467A875D827F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBC8CBB20E4C4562B04612BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MatchdayManager26/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Matchday Manager 26";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matchdaymanager.MatchdayManager26;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE1F808A9F0C403E8D7FBBEF /* Build configuration list for PBXNativeTarget "MatchdayManager26" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B41A824CB824371953B3A16 /* Debug */,
+				FBC8CBB20E4C4562B04612BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAC5F23739B48F68D4F037E /* Build configuration list for PBXProject "MatchdayManager26" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3C3CC46FEA467A875D827F /* Debug */,
+				04F93C9E8F3843E4AAF59FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8E71AE049BF4DCEA27C4CB0 /* Project object */;
+}
