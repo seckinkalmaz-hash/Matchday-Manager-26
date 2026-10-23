@@ -2,11 +2,14 @@
 
 Mobile-first football manager sim. Turkish UI: **Merkez**, **Kadro**, **Taktik**, **Transfer**, **Lig**, **Maça Çık**.
 
+> **Kişisel kullanım — lisanslı dağıtım yok.**  
+> Real club/player names in the web seed are for private personal use only — not for App Store, public marketing, or commercial distribution. No EA/FIFA affiliation.
+
 ## Tracks
 
 | Track | Location | Status |
 |---|---|---|
-| **Web PWA (primary)** | [`web/`](./web/) | Playable MVP loop — React + Vite + TypeScript |
+| **Web PWA (primary)** | [`web/`](./web/) | Playable MVP — React + Vite + TypeScript |
 | iOS SwiftUI (reference) | `MatchdayManager26/` on branch `cursor/phase-0-scaffold-a20b` | Phase 0–1 scaffold; App Store later when Mac available |
 
 ## Run (web)
@@ -21,5 +24,5 @@ Open `http://localhost:5173` (or the LAN URL for phone testing). PWA manifest + 
 
 ## Product notes
 
-- Synthetic **Endolu Ligi** / **Pogaz SK** seed — fictional names only
-- Web-first locked for shipping without a Mac; native App Store remains a later path
+- Playable club: **Galatasaray** · league label: **Süper Lig** (8-club personal-use seed)
+- Web-first locked for local play without a Mac; App Store packaging is out of scope for this seed

@@ -2,6 +2,9 @@
 
 Mobile-first React + Vite + TypeScript PWA. Turkish UI: **Merkez**, **Kadro**, **Taktik**, **Transfer**, **Lig**, **Maça Çık**.
 
+> **Kişisel kullanım — lisanslı dağıtım yok.**  
+> Club/player names are a private Süper Lig–style seed for personal play only. Not licensed for App Store, public marketing, or commercial distribution. Not affiliated with EA, FIFA, or any club/league.
+
 iOS SwiftUI project (if present on another branch) stays separate — this app lives under `web/` only.
 
 ## Run
@@ -22,7 +25,8 @@ npm run preview
 ## What’s in MVP
 
 - Five-tab shell with safe-area / full-screen phone frame
-- Seed: **Pogaz SK** + **Endolu Ligi** (fictional names)
+- Seed: playable **Galatasaray** in **Süper Lig** (personal-use real names)
+- League: Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor, Başakşehir, Antalyaspor, Konyaspor, Sivasspor
 - **Merkez**: next opponent, form, budget, **Maça Çık** basic sim
 - **Kadro**: swap starters ↔ bench (XI = 11)
 - **Taktik**: pitch + **4-3-3** / **3-5-2**

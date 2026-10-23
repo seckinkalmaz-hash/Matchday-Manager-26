@@ -1,4 +1,5 @@
 import { BottomNav } from './components/BottomNav'
+import { PersonalUseBanner } from './components/PersonalUseBanner'
 import { MerkezScreen } from './screens/MerkezScreen'
 import { KadroScreen } from './screens/KadroScreen'
 import { TaktikScreen } from './screens/TaktikScreen'
@@ -26,6 +27,7 @@ function Shell() {
   return (
     <div className="phone-shell">
       <div className="app-frame">
+        <PersonalUseBanner />
         <main className="app-main">
           <ScreenRouter />
         </main>

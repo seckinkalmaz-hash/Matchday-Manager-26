@@ -98,10 +98,23 @@ h1 {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
 
+.personal-banner {
+  margin: 0;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
 .app-main {
   flex: 1;
   overflow: auto;
-  padding: 18px 16px calc(var(--nav-h) + 20px);
+  padding: 14px 16px calc(var(--nav-h) + 20px);
   -webkit-overflow-scrolling: touch;
 }
 
